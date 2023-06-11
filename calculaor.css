@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* body {
+    height: 100vh;
+} */
+
+.display {
+    width: 100%;
+}
+
+#cal {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    margin-left: 29rem;
+    width: 450px;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    border: 2px solid rgb(220, 225, 230);
+    box-shadow: 0 1rem 2rem rgb(227, 227, 233);
+}
+
+.display input {
+    width: 100%;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 226, 34);
+    font-size: 2.1rem;
+}
+
+.display input::placeholder {
+    color: rgb(114, 222, 20);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
+    margin-top: 3rem;
+    padding: 2rem 2rem;
+}
+
+.buttons input[type="button"] {
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    color: rgb(228, 234, 234);
+    cursor: pointer;
+    border-radius: 0.31rem;
+}
+
+.buttons input[type="button"]:hover {
+    background-color: rgb(245, 238, 238);
+    color: rgb(18, 18, 18);
+    box-shadow: 0 0.5rem 1.5rem rgb(188, 188, 195);
+}
+
+input[type="button"]#equal {
+    grid-column: span 1;
+}
+
+input[type="button"]#equal:hover {
+    background-color: rgb(187, 174, 55);
+}
+
+input[type="button"][value="0"] {
+    grid-row: span 1;
+}
+
+input[type="button"]#memory-recall:hover {
+    background-color: rgb(36, 150, 231);
+}
+
+input[type="button"]#memory:hover {
+    background-color: rgb(25, 201, 172);
+}
+
+input[type="button"]#power:hover {
+    background-color: rgb(35, 202, 38);
+}
+
+input[type="button"]#sqrt:hover {
+    background-color: rgb(187, 174, 55);
+}
+
+input[type="button"]#percentage:hover {
+    background-color: rgb(190, 78, 231);
+}
+
+input[type="button"]#clear:hover {
+    background-color: rgb(21, 21, 221);
+}
+
+input[type="button"]#erase:hover {
+    background-color: rgb(230, 62, 44);
+}
